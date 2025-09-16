@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html" class="logo">Madihah Khan</a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="Experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+  
+
+    <section class="portfolio animated">
+      <h1 class="portfolio-header">My Projects</h1>
+      <h2 class="portfolio-subheader">All project video demonstrations can be found on my Youtube page</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-title="Mini crypto portfolio tracker" data-desc="A lightweight crypto portfolio tracker using vanilla JS, Chart.js, and CoinGecko API. Add assets, view real-time prices, track total value, visualise allocations with a pie chart, and monitor historical performance with a line chart. Data persists in localStorage.">
+          <img src="crypto.jpg" alt="Mini crypto portfolio tracker">
+          <h3>Mini crypto portfolio tracker
+            <a href="https://github.com/madihahkhan2006/Mini-crypto-portfolio-tracker" target="_blank">   🔗Github</a>
+          </h3>
+        </div>
+        <div class="project-card" data-title="Microsoft x Notifly x Copilot" data-desc="Notifly is an AI-powered chatbot built with Copilot Studio & Azure AI Foundry, integrated into employee and leadership dashboards. Features include smart reporting, meeting transcription, AI notifications, performance tracking, and analytics to boost efficiency and reduce admin workload.">
+          <img src="microsoft.jpg" alt="Microsoft x Notifly x Copilot">
+          <h3>Microsoft x Notifly x Copilot
+            <a href="https://www.youtube.com/watch?v=ztv4FJNLtIA" target="_blank">  🔗Watch Demo</a>
+          </h3>
+        </div>
+        <div class="project-card" data-title="Snackman with Javascript" data-desc="A clone of the famous retro game with different features including dual control (keyboard and on-screen buttons), score notation and much more created for an assignment. Using HTML, CSS and Javascript.">
+          <img src="snackman.jpg" alt="Snackman with JavaScript">
+          <h3>Snackman with Javascript
+            <a href="https://github.com/madihahkhan2006/Snackman-with-Javascript" target="_blank">   🔗Github</a>
+          </h3>
+        </div>
+        <div class="project-card" data-title="Flappy bird clone with Phaser" data-desc="A side-scrolling game built with Phaser 3 using arcade physics. Features include dynamic obstacle generation, camera follow, collision detection, gravity toggle, and input handling. Score increases as the player passes columns. Game state resets on crash via scene restart.">
+          <img src="flappybird.jpg" alt="Flappy bird clone with Phaser">
+          <h3>Flappy bird clone with Phaser
+            <a href="https://github.com/madihahkhan2006/Flappy-bird-clone-with-Phaser" target="_blank">   🔗Github</a>
+          </h3>
+        </div>
+        <div class="project-card" data-title="Currency converter with exchange rate API" data-desc="A simple and stylish currency converter built with HTML, CSS, and JavaScript. Features currency selection, swap, and clear options with a responsive, modern UI and real-time conversion updates using an API.">
+          <img src="currency.jpg" alt="Currency converter with exchange rate API">
+          <h3>Currency converter with exchange rate API
+            <a href="https://github.com/madihahkhan2006/Currency-converter-with-exchange-rate-API" target="_blank">   🔗Github</a>
+          </h3>
+        </div>
+        <div class="project-card" data-title="Memora (In progress)" data-desc="AI-powered adaptive learning application built with Streamlit. Uses OpenAI API for dynamic quiz generation and Supabase for authentication, database, and user progress tracking. Full-stack project combining backend and frontend in a single streamlined app. The goal is to continuously develop it so it becomes a mainstream study platform.">
+          <img src="memora.jpg" alt="Memora (In progress)">
+          <h3>Memora (In progress)</h3>
+        </div>
+        <div class="project-card" data-title="Custom keyword search engine using Exa API" data-desc="A Python CLI tool that uses the Exa API to perform keyword searches with optional domain filtering. It fetches and displays the top 10 results, showing each title and URL. Ideal for retrieving targeted content from specified sources.">
+          <img src="search.jpg" alt="Custom keyword search engine using Exa API">
+          <h3>Custom keyword search engine using Exa API       
+            <a href="https://github.com/madihahkhan2006/Custom-keyword-search-engine-using-Exa-API" target="_blank">   🔗Github</a>
+          </h3>
+        </div>
+        <div class="project-card" data-title="Home prices predictor with linear regression" data-desc="A simple model that implements linear regression with scikit-learn to model house prices based on size. Includes data preprocessing, train/test splitting, model fitting, prediction, R² evaluation, and visualizations using matplotlib and seaborn for exploratory and result analysis.">
+          <img src="homeprices.jpg" alt="Home prices predictor with linear regression">
+          <h3>Home prices predictor with linear regression
+            <a href="https://github.com/madihahkhan2006/Home-prices-predictor-with-linear-regression" target="_blank">   🔗Github</a>
+          </h3>
+        </div>
+        <div class="project-card" data-title="Personal portfolio" data-desc="A personal portfolio built to showcase projects, experience to potential employers. Includes a contact form that sends messages directly to the email address registered on Formspree.">
+          <img src="portfolio.jpg" alt="Personal portfolio">
+          <h3>Personal portfolio</h3>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal -->
+<div class="modal" id="projectModal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img id="modalImage" src="" alt="Project Preview">
+    <div class="modal-text">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
